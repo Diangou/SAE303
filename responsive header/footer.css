@@ -1,4 +1,3 @@
-/* Styles pour la navigation externe */
 .site-footer {
     text-align: center;
     padding: 20px;
@@ -6,7 +5,7 @@
   
   .navigation-externe {
     font-size: 14px;
-    color: #fff; /* Changement de la couleur du texte en blanc */
+    color: #fff; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Utilisation de la police Trebuchet MS */
   }
   
@@ -27,7 +26,7 @@
   
   .reseaux-sociaux a {
     text-decoration: none;
-    color: red; /* Couleur du lien */
+    color: red; 
   }
   
   .reseaux-sociaux a:hover {
@@ -35,8 +34,24 @@
   }
   
   footer img {
-    max-width: 100px; /* Ajuster la taille de l'image */
+    max-width: 100px;
     height: auto;
     display: block;
-    margin: 0 auto; /* Centrer l'image horizontalement */
+    margin: 0 auto; 
   }
+  
+  @media (max-width: 600px) {
+    .navigation-externe {
+      padding: 10px; 
+    }
+  
+    .reseaux-sociaux {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .reseaux-sociaux li {
+      margin: 10px 0;
+    }
+  }
+  
