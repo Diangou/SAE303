@@ -10,9 +10,10 @@
     @media (min-width: 600px) {
       .brand {
         margin-bottom: 1rem; } }
-  .site-header {
+    .site-header {
     position: relative;
-   }
+    z-index: 999; 
+  }
   
   .site-header__wrapper {
     padding-top: 1rem;
