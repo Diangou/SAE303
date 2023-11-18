@@ -1,0 +1,42 @@
+/* Styles pour la navigation externe */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .navigation-externe {
+    font-size: 14px;
+    color: #fff; /* Changement de la couleur du texte en blanc */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Utilisation de la police Trebuchet MS */
+  }
+  
+  .navigation-externe p {
+    margin-bottom: 10px;
+  }
+  
+  .reseaux-sociaux {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .reseaux-sociaux li {
+    margin: 0 10px;
+  }
+  
+  .reseaux-sociaux a {
+    text-decoration: none;
+    color: red; /* Couleur du lien */
+  }
+  
+  .reseaux-sociaux a:hover {
+    text-decoration: underline;
+  }
+  
+  footer img {
+    max-width: 100px; /* Ajuster la taille de l'image */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrer l'image horizontalement */
+  }
