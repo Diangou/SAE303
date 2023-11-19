@@ -37,7 +37,7 @@ searchButton.addEventListener("click", () => {
 
     // Filtrage
     let filteredUsers = usersData.filter(user => 
-    user.nom.toLowerCase().includes(searchTerm.toLowerCase()) && user.dep === 75
+    user.nom.toLowerCase().includes(searchTerm.toLowerCase()) && user.dep === 94
     && (selectedCommunes.includes("all") || selectedCommunes.includes(user.commune))
     && user.ecrans >= parseInt(ecransRange.value, 10)
     && (selectedProgrammateur.includes("all") || selectedProgrammateur.includes(user.programmateur))
@@ -113,7 +113,7 @@ function applyFiltersAndDisplay() {
     const selectedProgrammateur = Array.from(programmateurSelect.selectedOptions, option => option.value);
 
     let filteredUsers = usersData.filter(user => 
-        user.nom.toLowerCase().includes(searchTerm.toLowerCase()) && user.dep === 75
+        user.nom.toLowerCase().includes(searchTerm.toLowerCase()) && user.dep === 94
         && (selectedCommunes.includes("all") || selectedCommunes.includes(user.commune))
         && user.ecrans >= parseInt(ecransRange.value, 10)
         && (selectedProgrammateur.includes("all") || selectedProgrammateur.includes(user.programmateur))
@@ -124,6 +124,7 @@ function applyFiltersAndDisplay() {
 
     cinemaLayer.clearLayers();
 }
+
 
 
 

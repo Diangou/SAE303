@@ -13,18 +13,24 @@
     <title>Departement 91</title>
 </head>
 <body>
-
-    <h1>Trouvez votre cinéma ! <span class="icon">&#x1F37F;</span> </h1>
-    <!-- Emojipedia -->
+    
+    <h1>Trouvez votre 
+        <a class="cinema" href="#list-section">cinéma</a>
+        !
+        <span class="icon">&#x1F37F;</span><!-- Emojipedia -->
+    </h1>
+    
 
 <div class="filtre">
 
-    <input type="text" id="searchInput" placeholder="Recherche 🔎 :">
+    <div class="filtre-recherche">
+    <input type="text" id="searchInput" placeholder="Trouvez votre cinéma ... ">
+    </div>
 
-<div class="filtre-commune">
-    <label for="commune" onclick="toggleDropdown('commune')">Commune :</label>
-    <div class="commune-wrapper"></div>
-    <select id="commune" multiple class="hidden">
+    <div class="filtre-commune">
+        <label for="commune" onclick="toggleDropdown('commune')">Commune :</label>
+        <div class="commune-wrapper"></div>
+        <select id="commune" multiple class="hidden">
         <option value="all" selected>Toutes les communes</option>
         <option value="Arpajon">Arpajon</option>
         <option value="Athis-Mons">Athis-Mons</option>
@@ -53,15 +59,14 @@
         <option value="Les Ulis">Les Ulis</option>
         <option value="Viry-Châtillon">Viry-Châtillon</option>
         <option value="Yerres">Yerres</option>
+        </select>
+    </div>
 
-    </select>
-</div>
-
-<div class="filtre-range">
-    <label for="ecransRange" onclick="toggleDropdown('ecransRange','ecransRangeValue')">Ecrans minimum:</label>
-    <input type="range" class="hidden" id="ecransRange" min="0" max="50" step="1" value="0" oninput="updateEcransRangeValue()">
-    <span class="hidden" id="ecransRangeValue">0</span>
-</div>
+    <div class="filtre-range">
+        <label for="ecransRange" onclick="toggleDropdown('ecransRange','ecransRangeValue')">Ecrans minimum :</label>
+        <input type="range" class="hidden" id="ecransRange" min="0" max="50" step="1" value="0" oninput="updateEcransRangeValue()">
+        <span class="hidden" id="ecransRangeValue">0</span>
+    </div>
 
 
     <div class="filtre-program">
@@ -85,21 +90,25 @@
     </select>
     </div>
 
-    <button id="searchButton">Rechercher</button>
+    <div class="filtre-search">
+    <button id="searchButton">Recherche</button>
+    </div>
 
 </div>
 
     <p id="resultCount">Nombre de résultats : 0</p>
 
-    <button id="resetButton" onclick="resetFilters()">Réinitialiser</button>
+    <button id="resetButton" onclick="resetFilters()"><img src="Medias/reset.png" alt=""></button>
 
 <div class="map-container">
     <div id="map"></div>
 </div>
 
-    <p class="resultat">🎞️🎞️🎞️🎞️ RESULTATS 🎞️🎞️🎞️🎞️</p>
+    <p class="resultat">résultats</p>
 
+    <div class="liste-container" id="list-section">
     <ul></ul>
+    </div>
 
     <script src="departement91.js"></script>
 
