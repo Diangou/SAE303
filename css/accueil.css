@@ -42,14 +42,3 @@ body {
     scale: 1.05;
 }
 
-.titre-page {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-    margin-bottom: 1.375rem;
-    font-size: 3rem;
-    font-weight: bold;
-    max-width: 800px;
-    color: white;
-}
